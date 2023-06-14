@@ -1,6 +1,91 @@
 <html>
 <title> Dev Academy 2023 </title>
+<head>
+    <style>
+        img {
+          transition: filter 1s ease;
+          border-radius: 80%;
+          border-style: solid;
+          border-color: greenyellow;
+          border-width: 30px;
+          max-width: 40%;
+        }
+      </style>
+</head>
 
-Hello dsada
+<body>
 
+    <header>
+        <p>This is a paragraph</p>
+        <p>This is <span> another </span> paragraph</p>
+        <a href="https://www.google.com">Logo</a>
+        <img id="myImage" alt="Imagine logo" src="https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s1100-c50.jpg"/>
+    </header>
+
+    <section id="hero">
+        <div> Carousel </div>
+        <div> Map </div>
+    </section>
+
+    <section id="sponsors"> Sponsors </section>
+    <section id="latestNews">Latest News </section>
+    <section id="petitions">Petitions</section>
+    <section id="events">Events</section>
+    <section id="pressAppearences">Press Appearences</section>
+    <section id="social">Social</section>
+    <section id="problemReport">Problem Report</section>
+    <footer id="footer">
+
+    </footer>
+
+    <button onclick="buttonClick()">Click Me</button>
+    <input type="text" id="inc" value="0" width="50" height="200" style="border-radius: 25%;"></input>
+
+    <p>This is a paragraph </p>
+    <a href="https://www.google.com">Logo</a>
+
+    <h1> Heading 1 </h1>
+    <h2> Heading 2 </h2>
+    <p1> First paragraph </p1>
+
+    <table>
+        <tr>
+          <th>A</th>
+          <th>V</th>
+          <th>SAD</th>
+        </tr>
+        <tr>
+          <td>Ciprian</td>
+          <td>..</td>
+          <td>....</td>
+        </tr>
+        <tr>
+          <td>da</td>
+          <td>ads</td>
+          <td>h</td>
+        </tr>
+      </table>
+</body>
+<script>
+
+    var i = 0;
+    function buttonClick() {
+        document.getElementById('inc').value = ++i;
+    }
+
+    function animateBrightness() {
+        var img = document.getElementById("myImage");
+        
+        var animationInterval = setInterval(function() {
+            let k = 0;
+            for (let k = 0; k < 100; k++)
+                img.style.filter = "brightness(" + (1 + (0.1 * k)) + ")";
+        }, 2000);
+
+        setTimeout(function() {
+            clearInterval(animationInterval);
+        }, 10000);
+    }
+
+</script>
 </html>
