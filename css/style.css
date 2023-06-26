@@ -1,0 +1,146 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header section:first-child {
+    justify-content: flex-start;
+    margin-right: 900px;
+  }
+  
+  section[title="Navigator"] {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("https://interactive.wttw.com/sites/default/files/styles/full/public/images/2018/10/11/20181003_012516_828256gettyimages-484270482.jpg.1280x720_q85.jpg?itok=wu_LfKxC");
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  section[title="Navigator"] > nav {
+    margin: 10px;
+    display: flex;
+    background: white;
+    border-radius: 20px; 
+    align-content:center;
+  
+  }
+  
+  section[title="Navigator"] section {
+    margin-top:10px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    align-content:flex-end;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: forestgreen; 
+  }
+  
+    div[title="Event Article"] {
+      
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    section[title="Event Photo"] img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  
+    section[title="Event Info"] {
+      margin-bottom: 10px;
+    }
+  
+    section[title="Event Info"] section[title="Share"],
+    section[title="Event Info"] div[title="Date"],
+    section[title="Event Info"] div[title="Location"],
+    section[title="Event Info"] div[title="Phone Number"],
+    section[title="Event Info"] div[title="Map"] {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  
+    section[title="Event Info"] div[title="Location"] p {
+      margin: 0;
+    }
+  
+    section[title="content"] {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+  
+      footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f2f2f2;
+        padding: 20px;
+        color: #3366cc;
+        font-family: Arial, sans-serif;
+      }
+  
+      footer section {
+        flex: 1;
+        margin-right: 20px;
+      }
+  
+      footer section:last-child {
+        margin-right: 0;
+      }
+  
+      footer section label {
+        font-weight: bold;
+        font-size: 14px;
+      }
+  
+      footer section li {
+        list-style-type: none;
+        margin-bottom: 5px;
+      }
+  
+      footer section p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+  
+      footer section button {
+        padding: 8px 16px;
+        background-color: #3366cc;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+  
+      footer section button:focus {
+        outline: none;
+      }
+  
+      footer section form {
+        margin-bottom: 10px;
+      }
+  
+      footer section input[type="email"] {
+        width: 250px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 12px;
+      }
+  
+  
