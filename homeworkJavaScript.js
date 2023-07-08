@@ -15,7 +15,7 @@
   const numbers = [2321, 421, 12, 9, 29, 19, 21, 12, 2, 32, 4, 541, 6, 7, 8];
 
   // implement getLargestNumber function here
-  const getLargestNumber = (arr) => (arr.reduce((x, y) => x >= y ? x : y, arr[0]));
+  const getLargestNumber = (arr) => (arr.reduce((x, y) => x >= y ? x : y, arr[0])); 
 
   // use the function for the following array:
   console.log(getLargestNumber(numbers)); // 2321
